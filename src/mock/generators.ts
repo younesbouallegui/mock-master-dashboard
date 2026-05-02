@@ -140,6 +140,7 @@ export function generateMetrics(months: number): Metric[] {
       if (date > now) break;
       const base = 1000 + m * 50;
       metrics.push({
+        id: `met-${String(metrics.length + 1).padStart(4, '0')}`,
         date: date.toISOString().split('T')[0],
         revenue: randFloat(base * 2, base * 8),
         orders: rand(10, 80),
