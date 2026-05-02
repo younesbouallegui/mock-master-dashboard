@@ -22,7 +22,7 @@ export default function DashboardPage() {
 
   useEffect(() => {
     dispatch(fetchDashboardStats());
-    dispatch(fetchMetrics());
+    dispatch(fetchMetrics({}));
   }, [dispatch]);
 
   const revenueChartOption = {
