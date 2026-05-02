@@ -59,7 +59,7 @@ export default function DashboardLayout() {
             <ListItemIcon sx={{ minWidth: 40, color: location.pathname === item.path ? 'primary.main' : 'text.secondary' }}>
               {item.icon}
             </ListItemIcon>
-            <ListItemText primary={item.label} primaryTypographyProps={{ fontSize: 14, fontWeight: location.pathname === item.path ? 600 : 400 }} />
+            <ListItemText primary={item.label} slotProps={{ primary: { sx: { fontSize: 14, fontWeight: location.pathname === item.path ? 600 : 400 } } }} />
           </ListItemButton>
         ))}
       </List>
