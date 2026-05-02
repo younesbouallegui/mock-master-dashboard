@@ -58,6 +58,7 @@ export interface OrderItem {
 }
 
 export interface Metric {
+  id: string;
   date: string;
   revenue: number;
   orders: number;
